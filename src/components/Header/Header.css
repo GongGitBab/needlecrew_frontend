@@ -1,0 +1,21 @@
+.Header {
+  position: fixed;
+  display: flex;
+
+  align-items: center;
+  width: 100%;
+  height: 60px;
+  background-color: #7c4dff;
+}
+
+.logo {
+  width: 100px;
+  height: 30px;
+  margin-left: 60px;
+}
+
+p {
+  margin-left: 20px;
+  font-size: 20px;
+  text-decoration-line: none;
+}
