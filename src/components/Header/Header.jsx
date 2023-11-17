@@ -7,11 +7,11 @@ export default function Header() {
       <Link to="/">
         <img src="/logo.png" className="logo"></img>
       </Link>
-      <Link to="/">
-        <p>메뉴 1</p>
+      <Link to="/" className="header-a">
+        <p>수선 의뢰</p>
       </Link>
-      <Link to="/">
-        <p>메뉴 2</p>
+      <Link to="/" className="header-a">
+        <p>챗봇</p>
       </Link>
     </div>
   );

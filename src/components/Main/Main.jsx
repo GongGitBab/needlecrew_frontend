@@ -8,6 +8,10 @@ export default function Main() {
     <div className="Main">
       <Header />
       <Section1 />
+      <Section1 />
+      <Section1 />
+      <Section1 />
+      <Section1 />
       <Footer />
     </div>
   );
