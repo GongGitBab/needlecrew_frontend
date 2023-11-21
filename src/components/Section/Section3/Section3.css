@@ -1,24 +1,21 @@
-.Section1 {
+.Section3 {
   width: 100%;
   height: 760px;
-  bottom: 60px;
-  /* background-color: #fffae0; */
-  margin-top: 60px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-
-.section1-img {
-  width: 456px;
-  height: 547px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.section1-text {
+.section3-img {
+  width: 315px;
+  height: 410px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 20px;
+}
+
+.section3-text {
   display: flex;
   justify-content: center;
   align-items: center;

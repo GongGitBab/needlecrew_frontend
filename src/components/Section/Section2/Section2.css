@@ -1,24 +1,23 @@
-.Section1 {
+.Section2 {
   width: 100%;
   height: 760px;
   bottom: 60px;
-  /* background-color: #fffae0; */
-  margin-top: 60px;
+  background-color: #fff8f1;
   display: flex;
   flex-direction: row;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 }
 
-.section1-img {
-  width: 456px;
-  height: 547px;
+.section2-img {
+  width: 439px;
+  height: 568px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.section1-text {
+.section2-text {
   display: flex;
   justify-content: center;
   align-items: center;

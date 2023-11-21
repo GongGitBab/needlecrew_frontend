@@ -13,6 +13,12 @@ export default function Header() {
       <Link to="/" className="header-a">
         <p>챗봇</p>
       </Link>
+      <Link to="/" className="login">
+        <p>로그인</p>
+      </Link>
+      <Link to="/" className="signUp">
+        <p>회원가입</p>
+      </Link>
     </div>
   );
 }
