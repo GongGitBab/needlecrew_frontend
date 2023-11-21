@@ -10,7 +10,11 @@ export default function Section2() {
           <br />
           어떤 옷이든 맡겨보세요
         </h1>
-        <input type="button" value="수선 의뢰 바로가기"></input>
+        <input
+          type="button"
+          value="수선 의뢰 바로가기"
+          className="section-button"
+        ></input>
       </div>
     </div>
   );

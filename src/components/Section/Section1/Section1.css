@@ -28,3 +28,16 @@
 h1 {
   margin-bottom: 20px;
 }
+
+.section-button {
+  width: 180px;
+  height: 56px;
+  background-color: #ff6f0f;
+  color: white;
+  box-sizing: border-box;
+  text-decoration: none;
+  text-align: center;
+  border: none;
+  border-radius: 10px;
+  font-weight: 1000;
+}
