@@ -10,13 +10,13 @@ export default function Header() {
       <Link to="/" className="header-a">
         <p>수선 의뢰</p>
       </Link>
-      <Link to="/" className="header-a">
-        <p>챗봇</p>
-      </Link>
-      <Link to="/" className="login">
+      <a href="https://needlecrew.channel.io/home" className="header-a">
+        <p>AI 문의</p>
+      </a>
+      <Link to="/login" className="login">
         <p>로그인</p>
       </Link>
-      <Link to="/" className="signUp">
+      <Link to="/login" className="signUp">
         <p>회원가입</p>
       </Link>
     </div>

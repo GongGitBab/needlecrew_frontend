@@ -1,0 +1,60 @@
+.LoginPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.LoginSection {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 100px;
+  width: 750px;
+  height: 500px;
+  border: 1px solid;
+  border-radius: 10px;
+}
+
+.LoginPage-logo {
+  width: 100px;
+  height: 30px;
+  margin-left: 20px;
+  margin-bottom: 100px;
+}
+
+.ButtonSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.IDButton {
+  margin-bottom: 20px;
+  width: 450px;
+  height: 30px;
+  border-radius: 10px;
+}
+
+.PWButton {
+  margin-bottom: 50px;
+  width: 450px;
+  height: 30px;
+  border-radius: 10px;
+}
+
+.LoginButton {
+  margin-bottom: 20px;
+  width: 450px;
+  height: 30px;
+  background-color: #0084ff;
+  border: 1px solid gray;
+  border-radius: 10px;
+  color: white;
+  font-size: medium;
+}
+
+h1 {
+  margin-left: 150px;
+  margin-bottom: 35px;
+}
