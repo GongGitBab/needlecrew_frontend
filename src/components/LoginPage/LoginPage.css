@@ -8,6 +8,7 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
+  align-items: center;
   margin-top: 100px;
   width: 750px;
   height: 500px;
@@ -16,10 +17,13 @@
 }
 
 .LoginPage-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100px;
   height: 30px;
   margin-left: 20px;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 
 .ButtonSection {
@@ -33,28 +37,49 @@
   margin-bottom: 20px;
   width: 450px;
   height: 30px;
-  border-radius: 10px;
+  border: 1px solid rgb(187, 188, 194);
+  border-radius: 6px;
+  padding: 10px 16px;
 }
 
 .PWButton {
-  margin-bottom: 50px;
-  width: 450px;
-  height: 30px;
-  border-radius: 10px;
-}
-
-.LoginButton {
   margin-bottom: 20px;
   width: 450px;
   height: 30px;
+  border: 1px solid rgb(187, 188, 194);
+  border-radius: 6px;
+  padding: 10px 16px;
+}
+
+.LoginButton {
+  width: 486px;
   background-color: #0084ff;
-  border: 1px solid gray;
-  border-radius: 10px;
+  padding: 10px 16px;
+  border: 1px solid white;
+  border-radius: 6px;
   color: white;
-  font-size: medium;
+}
+
+.GoogleLogin {
+  width: 486px;
+  padding: 10px 16px;
+  background-color: white;
+  border: 1px solid rgb(187, 188, 194);
+  border-radius: 6px;
+  margin-bottom: 20px;
 }
 
 h1 {
   margin-left: 150px;
   margin-bottom: 35px;
+}
+
+.signUp-button {
+  display: inline;
+  color: rgb(148, 151, 160);
+  text-decoration: underline;
+}
+
+.signUp-sub {
+  color: rgb(148, 151, 160);
 }

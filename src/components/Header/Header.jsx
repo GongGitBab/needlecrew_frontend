@@ -7,7 +7,7 @@ export default function Header() {
       <Link to="/">
         <img src="/logo.png" className="logo"></img>
       </Link>
-      <Link to="/" className="header-a">
+      <Link to="/RepairRequest" className="header-a">
         <p>수선 의뢰</p>
       </Link>
       <a href="https://needlecrew.channel.io/home" className="header-a">
