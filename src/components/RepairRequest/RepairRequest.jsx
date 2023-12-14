@@ -5,6 +5,14 @@ import Header from "../Header/Header";
 const RepairRequest = () => {
   const [page, setPage] = useState(1);
   const [selectedButton, setSelectedButton] = useState(null);
+  const [selectedCategory, setSelectedCategory] = useState(null);
+
+  // 각 카테고리에 해당하는 아이템 리스트
+  const categories = {
+    하의: ["바지", "치마", "반바지"],
+    상의: ["맨투맨", "셔츠", "티셔츠"],
+    // 여러 카테고리 추가 가능
+  };
 
   const buttonClick = () => {
     setPage(page + 1);
@@ -18,6 +26,11 @@ const RepairRequest = () => {
 
   const handleSelectButtonClick = (buttonType) => {
     setSelectedButton(buttonType);
+
+    // 2번째 페이지에서 선택한 카테고리 저장
+    if (page === 2) {
+      setSelectedCategory(buttonType);
+    }
   };
 
   const renderPage = () => {
@@ -52,26 +65,36 @@ const RepairRequest = () => {
             >
               하의
             </SelectButton>
-            {/* 나머지 버튼들에 대해서도 동일하게 처리 */}
+            <SelectButton
+              isSelected={selectedButton === "상의"}
+              onClick={() => handleSelectButtonClick("상의")}
+            >
+              상의
+            </SelectButton>
           </div>
         );
       case 3:
+        // categories[selectedCategory]가 정의되었는지 확인 후 map을 사용합니다.
         return (
           <div>
-            <Title>의류 선택</Title>
-            <SubTitle>수선하고자 하는 성별의 의류를 선택해주세요.</SubTitle>
-            <SelectButton
-              isSelected={selectedButton === "여성복"}
-              onClick={() => handleSelectButtonClick("여성복")}
-            >
-              여성복
-            </SelectButton>
-            <SelectButton
-              isSelected={selectedButton === "남성복"}
-              onClick={() => handleSelectButtonClick("남성복")}
-            >
-              남성복
-            </SelectButton>
+            <Title>카테고리 선택</Title>
+            <SubTitle>
+              수선하고자 하는 아이템의 카테고리를 선택해주세요.
+            </SubTitle>
+            {categories[selectedCategory] ? (
+              // categories[selectedCategory]가 정의되어 있으면 map을 사용합니다.
+              categories[selectedCategory].map((item) => (
+                <SelectButton
+                  key={item}
+                  isSelected={selectedButton === item}
+                  onClick={() => handleSelectButtonClick(item)}
+                >
+                  {item}
+                </SelectButton>
+              ))
+            ) : (
+              <p>선택한 카테고리에 대한 항목이 없습니다.</p>
+            )}
           </div>
         );
       default:
@@ -82,7 +105,6 @@ const RepairRequest = () => {
   return (
     <RepairRequestDiv>
       <Header />
-
       {renderPage()}
       {page > 1 && <Button onClick={backButtonClick}>이전 단계</Button>}
       <Button onClick={buttonClick}>다음 단계</Button>
@@ -124,11 +146,13 @@ const SelectButton = styled.button`
   height: 50px;
   margin-bottom: 20px;
   background-color: white;
+  cursor: pointer;
 `;
 
 const Button = styled.button`
   display: inline;
   color: #257cff;
+  cursor: pointer;
 `;
 
 export default RepairRequest;

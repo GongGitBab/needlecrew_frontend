@@ -40,4 +40,5 @@ h1 {
   border: none;
   border-radius: 10px;
   font-weight: 1000;
+  cursor: pointer;
 }
