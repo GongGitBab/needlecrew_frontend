@@ -1,4 +1,5 @@
 import "./Section2.css";
+import { Link } from "react-router-dom";
 
 export default function Section2() {
   return (
@@ -10,11 +11,13 @@ export default function Section2() {
           <br />
           어떤 옷이든 맡겨보세요
         </h1>
+        <Link to="/RepairRequest">
         <input
           type="button"
           value="수선 의뢰 바로가기"
           className="section-button"
-        ></input>
+        />
+        </Link>
       </div>
     </div>
   );
